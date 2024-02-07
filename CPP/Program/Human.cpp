@@ -1,3 +1,10 @@
+/*
+Bismillah Saya Themy Sabri Syuhada dengan NIM 2203903.
+Demi keberkahan-Nya, saya berjanji mengerjakan
+latihan praktikum 1 DPBO dengan jujur dan
+tidak melakukan kecurangan seperti yang telah dispesifikasikan.
+Aamiin.
+*/
 // import library
 #include <string>
 #include <vector>
@@ -104,60 +111,4 @@ public:
 
     // method destruktor
     ~Human() {}
-};
-
-class HumanList
-{
-private:
-    vector<Human> humans;
-
-public:
-    // Method untuk menambahkan Human baru ke dalam list
-    void addHuman(const Human &human)
-    {
-        humans.push_back(human);
-    }
-
-    // Method untuk menghapus Human dari list berdasarkan ID
-    void removeHumanByID(int id)
-    {
-        for (auto it = humans.begin(); it != humans.end(); ++it)
-        {
-            if (it->getID() == id)
-            {
-                humans.erase(it);
-                return;
-            }
-        }
-        cout << "Human with ID " << id << " not found." << endl;
-    }
-
-    // Method untuk mengedit data Human berdasarkan ID
-    void editHumanByID(int id, const string &newName, const string &newBidang, const string &newPartai)
-    {
-        for (auto &human : humans)
-        {
-            if (human.getID() == id)
-            {
-                human.setName(newName);
-                human.setBidang(newBidang);
-                human.setPartai(newPartai);
-                return;
-            }
-        }
-        cout << "Human with ID " << id << " not found." << endl;
-    }
-
-    // Method untuk menampilkan seluruh data Human dalam list
-    void displayAllHumans()
-    {
-        cout << "List of Humans:" << endl;
-        for (const auto &human : humans)
-        {
-            cout << "ID: " << human.getID() << ", Name: " << human.getName() << ", Bidang: " << human.getBidang() << ", Partai: " << human.getPartai() << endl;
-        }
-    }
-
-    // method destruktor
-    ~HumanList() {}
 };
