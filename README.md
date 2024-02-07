@@ -26,6 +26,3 @@ Untuk fitur "Hapus" dan "Edit" akan menggunakan ID sebagai acuan untuk mencari d
    <img width="960" alt="Edit + view data" src="https://github.com/ThemySabri/LP1DPBO2024C1/assets/89757084/afaef493-fcfc-404b-8af3-4a1b025847dc">
 6. Menghapus, menampilkan data setelah dihapus, dan keluar program
    <img width="960" alt="Delete + view + exit" src="https://github.com/ThemySabri/LP1DPBO2024C1/assets/89757084/eb90a8fa-8f5d-4de3-baaf-dbe853c40d72">
-
-
-
