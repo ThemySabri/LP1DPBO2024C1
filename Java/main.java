@@ -1,9 +1,16 @@
+/*
+Bismillah Saya Themy Sabri Syuhada dengan NIM 2203903.
+Demi keberkahan-Nya, saya berjanji mengerjakan
+latihan praktikum 1 DPBO dengan jujur dan
+tidak melakukan kecurangan seperti yang telah dispesifikasikan.
+Aamiin.
+*/
 
 // import library
 import java.util.Scanner;
 import java.util.ArrayList;
 
-public class main {
+public class Main {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         ArrayList<Human> humanList = new ArrayList<>();

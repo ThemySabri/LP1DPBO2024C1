@@ -1,6 +1,10 @@
-// import library
-import java.io.FileWriter;
-import java.io.PrintWriter;
+/*
+Bismillah Saya Themy Sabri Syuhada dengan NIM 2203903.
+Demi keberkahan-Nya, saya berjanji mengerjakan
+latihan praktikum 1 DPBO dengan jujur dan
+tidak melakukan kecurangan seperti yang telah dispesifikasikan.
+Aamiin.
+*/
 
 // deklarasi class Human. Best practice-nya,
 // nama class pakai huruf kapital depannya
@@ -14,7 +18,10 @@ public class Human {
     // konstruktor default
     public Human() {
         // set default value untuk name
+        this.id = 0;
         this.name = "";
+        this.bidang = "";
+        this.partai = "";
     }
 
     // konstruktor dengan parameter
@@ -79,21 +86,5 @@ public class Human {
     // method destructor
     protected void finalize() {
         // not implemented, as Java handles garbage collection automatically
-    }
-
-    // method to write human details to file
-    public void writeToFile(String filename) {
-        try {
-            FileWriter fileWriter = new FileWriter(filename, true);
-            PrintWriter printWriter = new PrintWriter(fileWriter);
-            printWriter.println("ID: " + id);
-            printWriter.println("Name: " + name);
-            printWriter.println("Bidang: " + bidang);
-            printWriter.println("Partai: " + partai);
-            printWriter.close();
-        } catch (Exception e) {
-            System.out.println("An error occurred.");
-            e.printStackTrace();
-        }
     }
 }
