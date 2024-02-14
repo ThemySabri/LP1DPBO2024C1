@@ -12,6 +12,8 @@ Program ini merupakan program yang dibuat untuk menyimpan data anggota dewan dal
 
 Untuk fitur "Hapus" dan "Edit" akan menggunakan ID sebagai acuan untuk mencari data anggota dewan yang dimaksud.
 
+Khusus bahasa PHP, terdapat fitur tambahan untuk menambahkan foto anggota dewan.
+
 ## Screenshots
 
 1. Compile, run, dan tambah data pertama
